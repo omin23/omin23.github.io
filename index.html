@@ -93,22 +93,20 @@
           <img src="/assets/img/headshot.png" class="circle img-responsive profile-pic" alt="avatar">
         </a>
       </li>
-
       <li class="bold">
         <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-person small"></i><span>About</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-
-      <li class="bold">
         <!-- mdi-av-web small
              mdi-av-my-library-books small-->
         <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
             class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
       </li>
       <li class="bold">
         <!--
@@ -174,14 +172,14 @@
         <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-person small"></i><span>About</span></a>
       </li>
+       <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
       <li class="bold">
         <a aria-label="Navigate to the Experience section" href="#experience"
           class="waves-effect waves-dark teal-text"><i
             class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
@@ -303,8 +301,236 @@
       </div>
     </section>
 
+    <!-- Third Section: Projects -->
+    <section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Projects</h3>
+      <div class="container">
+        <!-- Project Filter Buttons -->
+        <div class="row">
+          <div class="col s12 center-align" style="margin-bottom: 30px;">
+            <button class="btn project-filter-btn active" data-filter="all">All</button>
+            <button class="btn project-filter-btn" data-filter="ml-ai">ML/AI</button>
+            <button class="btn project-filter-btn" data-filter="agentic-ai">Agentic AI</button>
+            <button class="btn project-filter-btn" data-filter="bio-ml">Bio ML/AI</button>
+          </div>
+        </div>
 
-    <!-- Third Section: Experience -->
+        <div class="row" id="projects-container">
+          <!-- Agentic AI Projects -->
+          <div class="col s12 m6 l6 project-card" data-category="agentic-ai">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="CrewAI Workflow" src="/assets/img/CrewAI_logo.png" style="height: 200px; width: 100%; object-fit: contain; background: #f5f5f5;" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Autonomous Energy Infrastructure Agent<i class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Multi-agent system using CrewAI for monitoring and optimizing clean energy infrastructure through digital twin simulations.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Project Details</small><i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> CrewAI, LangChain, Python, Docker</li>
+                  <li>Autonomous monitoring of digital twin simulations</li>
+                  <li>Predictive model optimization for resource allocation</li>
+                  <li>MLOps integration with CI/CD pipeline</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit GitHub repo" href="https://github.com/omin23" target="_blank" data-position="top"
+                    data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l6 project-card" data-category="agentic-ai">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="RAG Pipeline" src="/assets/img/LangGraph_logo.png" style="height: 200px; width: 100%; object-fit: contain; background: #f5f5f5;" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Production RAG Pipeline<i class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Scalable RAG pipeline using LangChain and vector databases for domain-specific LLM applications.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Project Details</small><i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> LangChain, Vector Databases, Python, FastAPI</li>
+                  <li>Low-latency context-aware inference</li>
+                  <li>Enterprise-grade scalability</li>
+                  <li>Domain-specific knowledge integration</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit GitHub repo" href="https://github.com/omin23" target="_blank" data-position="top"
+                    data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bio ML/AI Projects -->
+          <div class="col s12 m6 l6 project-card" data-category="bio-ml">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="GWAS LLM" src="/assets/img/umich_biostat_logo.jpeg" style="height: 200px; width: 100%; object-fit: cover;" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">LLM-Enhanced GWAS Analysis<i class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Novel phenotype recognition method using LLMs for Genome Wide Association Studies with 50,000+ genetic records.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Project Details</small><i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Python, PyTorch, LangChain, PubMed API</li>
+                  <li>Tested on 12 distinct phenotypes</li>
+                  <li>50,000+ genetic sequencing records analyzed</li>
+                  <li>Electronic Health Records integration</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit GitHub repo" href="https://github.com/omin23" target="_blank" data-position="top"
+                    data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l6 project-card" data-category="bio-ml">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Medical AI" src="/assets/img/Deep-learning-for-computer-vision2.png" style="height: 200px; width: 100%; object-fit: cover;" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Expert Reasoning in Medical LLMs<i class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Integrating expert medical reasoning into LLMs, improving diagnostic accuracy by 38% on 80,000+ health records.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Project Details</small><i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Python, vLLM, NeMo Guardrails, PyTorch</li>
+                  <li>38% improvement in diagnostic accuracy</li>
+                  <li>80,000+ precision health records analyzed</li>
+                  <li>HIPAA-compliant implementation</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit GitHub repo" href="https://github.com/omin23" target="_blank" data-position="top"
+                    data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ML/AI Projects -->
+          <div class="col s12 m6 l6 project-card" data-category="ml-ai">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Computer Vision" src="/assets/img/computer-vision-v2-04.png" style="height: 200px; width: 100%; object-fit: cover;" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Computer Vision Pipeline<i class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Advanced computer vision system using PyTorch and OpenCV for real-time object detection and analysis.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Project Details</small><i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> PyTorch, OpenCV, Python, CUDA</li>
+                  <li>Real-time object detection</li>
+                  <li>Custom neural network architecture</li>
+                  <li>GPU-accelerated processing</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit GitHub repo" href="https://github.com/omin23" target="_blank" data-position="top"
+                    data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l6 project-card" data-category="ml-ai">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="MLflow" src="/assets/img/mlflow_logo.png" style="height: 200px; width: 100%; object-fit: contain; background: #f5f5f5;" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">MLOps Automation Platform<i class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  End-to-end MLOps platform with automated model training, validation, and deployment using MLflow and Docker.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Project Details</small><i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> MLflow, Docker, Kubernetes, Python</li>
+                  <li>Automated model lifecycle management</li>
+                  <li>Continuous integration and deployment</li>
+                  <li>Model performance monitoring</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit GitHub repo" href="https://github.com/omin23" target="_blank" data-position="top"
+                    data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- 1. Django Project -->
+          <!-- <div class="col s12 m6 l6">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="django web app" src="/assets/img/project-library-logo.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Local Library Web-App<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A web-app that creates an online catalog for a small local library, where users can browse available books and manage their accounts.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> HTML, CSS, Bootstrap, SQLite, Django, Heroku</li>
+                  <li>Users can view list and detail information for books and authors.</li>
+                  <li>Admin users can create and manage models.</li>
+                  <li>Librarians can renew reserved books.</li>
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://django-local-lib.herokuapp.com" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/django-local-library"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          
+
+          <!-- ************* -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Fourth Section: Experience -->
     <section id="experience" class="section scrollspy">
       <h3 class="page-title white-text teal">Experience</h3>
       <div class="container">
@@ -320,7 +546,7 @@
               <div class="col s12 m10">
                 <p>
                   <span class="card-title"><a href="https://synafox.com/" target="_blank"
-                      class="teal-text hoverline">Syanfox AI</a></span>
+                      class="teal-text hoverline">Synafox AI</a></span>
                 </p>
               </div>
             </div>
@@ -336,7 +562,7 @@
                Deployed scalable, production-grade RAG pipelines using LangChain and vector databases to serve domain-specific LLMs. This architecture ensured low-latency, context-aware inference for specialized enterprise applications.
               </li>
               <li>
-                <b>Tools:</b> Python, CrewAI, LangChain, 
+                <b>Tools:</b> Python, CrewAI, LangChain
               </li>
             </ul>
           </div>
@@ -373,7 +599,7 @@
                 Accelerated AI-driven research cycles by 15x on a HIPAA-regulated HPC cluster by implementing a parallelized software architecture with vLLM within an Agile development framework while utilizing Site Reliability Engineering techniques to employ information security methods to protect sensitive data.
               </li>
               <li>
-                <b>Tools:</b> Python, LangChain, Langgraph, PubMed Central API, PyTorch, vLLM, Bash
+                <b>Tools:</b> Python, LangChain, LangGraph, PubMed Central API, PyTorch, vLLM, Bash
               </li>
             </ul>
           </div>
@@ -420,75 +646,7 @@
       </div>
     </section>
 
-    <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        <div class="row">
-
-          <div class="col s12 m12 l12">
-            <div class="card medium">
-              <div class="card-content">
-                <span class="card-title teal-text">Portfolio Projects</span>
-                <p>
-                  This section will showcase my latest projects in Machine Learning, AI, and Software Development. 
-                  Currently updating with new projects from my work at Synafox AI and Zhou Lab research.
-                </p>
-                <br>
-                <p><strong>Coming Soon:</strong></p>
-                <ul>
-                  <li>Autonomous Agentic Workflows for Clean Energy Infrastructure</li>
-                  <li>LLM Integration for Genome Wide Association Studies</li>
-                  <li>Expert Reasoning Enhancement in Large Language Models</li>
-                  <li>RAG Pipeline Implementation Projects</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- 1. Django Project -->
-          <!-- <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="django web app" src="/assets/img/project-library-logo.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Local Library Web-App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A web-app that creates an online catalog for a small local library, where users can browse available books and manage their accounts.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> HTML, CSS, Bootstrap, SQLite, Django, Heroku</li>
-                  <li>Users can view list and detail information for books and authors.</li>
-                  <li>Admin users can create and manage models.</li>
-                  <li>Librarians can renew reserved books.</li>
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://django-local-lib.herokuapp.com" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/django-local-library"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-          
-
-          <!-- ************* -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Seventh Section: Education -->
+    <!-- Fifth Section: Education -->
     <section id="education" class="section scrollspy">
       <h3 class="page-title white-text teal">Education</h3>
       <div class="container">
@@ -510,11 +668,13 @@
                   <p>
                     <b>Relevant Courseworks:</b>
                   <ul>
-                    <li>Graduate Mathicne learning</li>
+                    <li>Graduate Machine Learning</li>
+                    <li>Graduate ML and SP in Biomedical Sciences</li>
+                    <li>Graduate Probability Theory</li>
+                    <li>Machine Learning Research</li>
+                    <li>Computer Vision</li>
                     <li>Advanced Data Science</li>
                     <li>Data Structures and Algorithms</li>
-                    <li>Graduate Probability Theory</li>
-                    <li>Computer Vision</li>
                   </ul>
                   </p>
                 </ul>
@@ -525,7 +685,7 @@
       </div>
     </section>
 
-    <!-- Fifth Section: Skills -->
+    <!-- Sixth Section: Skills -->
     <section id="skills" class="section scrollspy">
       <h3 class="page-title white-text teal">Skills</h3>
       <div class="container">
@@ -666,7 +826,7 @@
       </div>
     </section>
 
-    <!-- Eight Section: Contact -->
+    <!-- Seventh Section: Contact -->
     <section id="contact" class="section scrollspy full-height">
       <h3 class="page-title white-text teal">Contact</h3>
       <div class="container">
@@ -749,6 +909,32 @@
           darkModeToggle.textContent = '🌙';
           localStorage.setItem('darkMode', 'light');
         }
+      });
+
+      // Project filtering functionality
+      const filterButtons = document.querySelectorAll('.project-filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const filter = this.getAttribute('data-filter');
+          
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          // Add active class to clicked button
+          this.classList.add('active');
+          
+          // Filter project cards
+          projectCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            
+            if (filter === 'all' || category === filter) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
       });
     })
   </script>
