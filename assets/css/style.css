@@ -1363,20 +1363,91 @@ body.dark-mode .card-reveal .btn-floating:hover {
   .section {
     padding: 40px 0;
   }
-  
+
   .section.scrollspy {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  
+
   .page-title {
     font-size: 2.2rem !important;
     margin-bottom: 30px !important;
   }
-  
+
   #projects.section,
   #experience.section,
   #skills.section {
     padding: 60px 0 80px 0;
   }
+}
+
+/* ========================================
+   Site Header Bar
+   ======================================== */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 52px;
+  background: #0a0a0a;
+  border-bottom: 2px solid #ffcb05;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  gap: 16px;
+}
+.button-collapse { color: #ffcb05; font-size: 22px; cursor: pointer; }
+.site-header-title { color: #ffcb05; font-weight: 600; font-size: 1.1rem; }
+
+/* Push content below fixed header */
+main { padding-top: 52px; }
+#intro.section { padding-top: 0; min-height: calc(100vh - 52px); }
+
+/* ========================================
+   Side Nav
+   ======================================== */
+.side-nav {
+  background: #111;
+  border-right: 2px solid #ffcb05;
+  width: 220px !important;
+}
+.side-nav li > a {
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  transition: all 0.2s;
+}
+.side-nav li > a:hover,
+.side-nav li > a.active {
+  background: rgba(255,203,5,0.12);
+  color: #ffcb05;
+}
+.side-nav-profile {
+  background: linear-gradient(135deg, #00274c, #1a1a1a);
+  padding: 24px 20px 18px;
+}
+.side-nav-name { display: block; color: #ffcb05; font-size: 1.1rem; font-weight: 600; }
+.side-nav-role { display: block; color: #b0b0b0; font-size: 0.85rem; margin-top: 4px; }
+
+/* Featured projects CTA */
+.view-all-btn {
+  display: inline-block;
+  padding: 12px 36px;
+  background: linear-gradient(135deg, #00274c 0%, #ffcb05 100%);
+  color: white;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255,203,5,0.3);
+}
+.view-all-btn:hover {
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255,203,5,0.5);
+  text-shadow: 0 0 10px rgba(255,255,255,0.8);
 }
