@@ -518,6 +518,7 @@ h3 {
 /* Override teal-text for Michigan theme */
 .teal-text {
   color: #ffcb05 !important;
+  text-shadow: 0 0 10px rgba(255, 203, 5, 0.3);
 }
 
 .teal-text:hover {
@@ -616,6 +617,19 @@ a.hoverline:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
+  padding: 20px 24px 24px;
+}
+
+.card.medium .card-content p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin: 0;
+  color: #b0b0b0;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .card-action a.btn-floating {
@@ -644,13 +658,6 @@ small {
 
 .grey-text {
   color: #666 !important;
-}
-
-/* main .teal-text */
-
-.teal-text {
-  color: #ffcb05 !important;
-  text-shadow: 0 0 10px rgba(255, 203, 5, 0.3);
 }
 
 /* .teal */
@@ -1349,18 +1356,6 @@ body.dark-mode .card-reveal .btn-floating:hover {
 /* Container Improvements */
 .container {
   max-width: 1200px;
-}
-
-/* Card Consistency */
-.card {
-  border-radius: 12px !important;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
-  transition: all 0.3s ease !important;
-}
-
-.card:hover {
-  transform: translateY(-5px) !important;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2) !important;
 }
 
 /* Responsive Section Adjustments */
